@@ -1,0 +1,140 @@
+div.lotto .lottodraw {
+  padding: 50px;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+div.lotto .lottodraw h3 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+div.lotto .lottodraw .fixedNum {
+  margin-top: 30px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.lotto .lottodraw .fixedNum h5 {
+  text-indent: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+}
+
+div.lotto .lottodraw .fixedNum select {
+  height: 40px;
+  margin-left: 60px;
+  font-size: 15px;
+}
+
+div.lotto .lottodraw .fixedNum select option {
+  line-height: 30px;
+  font-size: 16px;
+}
+
+div.lotto .lottodraw .checkNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+}
+
+div.lotto .lottodraw .checkNum input {
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  border: 0;
+  border-bottom: 1px solid #000;
+  font-size: 24px;
+}
+
+div.lotto .lottodraw .btn {
+  width: 120px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+div.lotto .lottodraw .shape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+}
+
+div.lotto .lottodraw .shape .ball {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+}
+
+div.lotto .lottodraw .shape .ball:nth-child(1) {
+  background-color: red;
+}
+
+div.lotto .lottodraw .shape .ball:nth-child(2) {
+  background-color: orange;
+}
+
+div.lotto .lottodraw .shape .ball:nth-child(3) {
+  background-color: yellow;
+}
+
+div.lotto .lottodraw .shape .ball:nth-child(4) {
+  background-color: green;
+}
+
+div.lotto .lottodraw .shape .ball:nth-child(5) {
+  background-color: blue;
+}
+
+div.lotto .lottodraw .shape .ball:nth-child(6) {
+  background-color: purple;
+}
+
+div.lotto .lottodraw .shape .ball span {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+/*# sourceMappingURL=lotto.css.map */

@@ -1,0 +1,195 @@
+div.cheat {
+  padding-bottom: 40px;
+}
+
+div.cheat .lodingMessage {
+  color: #000;
+}
+
+div.cheat .cheatWrap {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 220px;
+  padding: 40px;
+  background-color: #eee;
+  border-radius: 30px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 2px 2px 5px #555;
+          box-shadow: 2px 2px 5px #555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 20px;
+}
+
+div.cheat .cheatWrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 15px;
+  overflow: scroll;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+div.cheat .cheatWrap ul::-webkit-scrollbar {
+  display: none;
+}
+
+div.cheat .cheatWrap ul li.lodingMessage {
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+div.cheat .cheatWrap ul li div {
+  position: relative;
+}
+
+div.cheat .cheatWrap ul li div h5 {
+  text-align: center;
+  line-height: 40px;
+  color: #000;
+}
+
+div.cheat .cheatWrap ul li div div {
+  max-width: 320px;
+  width: calc(100% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  position: relative;
+  border: 1px solid #000;
+  white-space: pre-wrap;
+}
+
+div.cheat .cheatWrap ul li div div i {
+  font-size: 16px;
+  font-weight: 700;
+  text-indent: 5px;
+}
+
+div.cheat .cheatWrap ul li div div button {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+div.cheat .cheatWrap ul li div div h6 {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 300;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+div.cheat .cheatWrap ul li .mymessage {
+  border: 0px solid #000;
+  color: #fff;
+}
+
+div.cheat .cheatWrap ul li .mymessage div {
+  border-radius: 15px 15px 0 15px;
+  margin-left: auto;
+  background-color: #333;
+}
+
+div.cheat .cheatWrap ul li .mymessage div h6 {
+  right: calc(100% + 2px);
+  color: #000;
+}
+
+div.cheat .cheatWrap ul li .mymessage div i {
+  text-align: right;
+}
+
+div.cheat .cheatWrap ul li .mymessage div:hover button {
+  display: block;
+}
+
+div.cheat .cheatWrap ul li .othermessage {
+  border: 0px solid #000;
+  color: #000;
+}
+
+div.cheat .cheatWrap ul li .othermessage div {
+  background-color: #ddf;
+  border-radius: 0 15px 15px 15px;
+  white-space: pre-wrap;
+}
+
+div.cheat .cheatWrap ul li .othermessage div h6 {
+  left: calc(100% + 2px);
+}
+
+div.cheat .cheatWrap .sendMessage form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+div.cheat .cheatWrap .sendMessage form i {
+  color: #000;
+  display: block;
+  text-align: center;
+  width: 30px;
+}
+
+div.cheat .cheatWrap .sendMessage form textarea {
+  display: block;
+  width: calc(100% - 60px);
+  background-color: transparent;
+  border: 0;
+  resize: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 34px;
+  line-height: 30px;
+  max-height: 124px;
+}
+
+div.cheat .cheatWrap .sendMessage form textarea::-webkit-scrollbar {
+  display: none;
+}
+
+div.cheat .cheatWrap .sendMessage form button {
+  padding: 0;
+  display: block;
+  width: 30px;
+  border: 0;
+  background-color: transparent;
+}
+/*# sourceMappingURL=cheat.css.map */

@@ -1,0 +1,95 @@
+div.home::-webkit-scrollbar {
+  display: none;
+}
+
+div.home .homeWrap {
+  padding: 100px 10px 40px;
+  font-family: "noto serif kr";
+  max-width: 860px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+div.home .homeWrap .homeHeader {
+  position: relative;
+}
+
+div.home .homeWrap .homeHeader h3 {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  left: -100%;
+  position: absolute;
+  font-size: 80px;
+  font-family: "dm serif display";
+  font-style: italic;
+}
+
+div.home .homeWrap .homeHeader h6 {
+  padding-top: 50px;
+  text-indent: 7px;
+  margin-top: 20px;
+  font-family: "noto sans kr";
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+div.home div a {
+  font-family: "dm serif display";
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+div.home div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+div.home div ul li i {
+  font-family: "noto sans kr";
+  font-weight: 700;
+}
+
+div.home div ul li span {
+  margin: 0 5px;
+}
+
+div.home .background {
+  background-color: rgba(150, 190, 220, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.4;
+}
+
+div.home .background .ball {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  -webkit-transition: all 8s;
+  transition: all 8s;
+  border-radius: 50px;
+  border: 2px solid #000;
+  border-color: #123456;
+}
+/*# sourceMappingURL=home.css.map */

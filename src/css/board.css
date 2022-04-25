@@ -1,0 +1,380 @@
+div#board {
+  font-family: "noto sans kr";
+  font-size: 14px;
+  font-style: normal;
+  position: fixed;
+  z-index: 10001;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: auto;
+  margin: auto;
+  padding: 40px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  background-color: #222;
+  overflow-y: scroll;
+}
+
+div#board::-webkit-scrollbar {
+  display: none;
+}
+
+div#board .boardWrap {
+  max-width: 960px;
+  margin: auto;
+  height: 619px;
+  position: relative;
+}
+
+div#board .btnClose {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+div#board .boardList {
+  border: 0px solid #000;
+}
+
+div#board .boardList .boardName {
+  font-family: "noto serif kr";
+  font-style: italic;
+  border-bottom: 3px solid #fff;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+div#board .boardList .boardArea {
+  border-top: 2px solid #ccc;
+  border-bottom: 1px solid #fff;
+  margin: 10px 10px 0;
+}
+
+div#board .boardList .boardArea .loading {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+div#board .boardList .boardArea .loading span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 120px;
+  margin: 0 auto;
+}
+
+div#board .boardList .boardArea .divideBoard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #fff;
+  line-height: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+div#board .boardList .boardArea .divideBoard span {
+  font-family: "dm serif display";
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 700;
+  cursor: unset;
+}
+
+div#board .boardList .boardArea .divideBoard .boardTitle {
+  line-height: 30px;
+  height: 30px;
+  margin: 5px 0;
+  width: calc(100% - 210px);
+  border: 0px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 580px) {
+  div#board .boardList .boardArea .divideBoard .boardTitle {
+    width: calc(100% - 110px);
+  }
+}
+
+div#board .boardList .boardArea .divideBoard .boardTitle:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+div#board .boardList .boardArea .divideBoard .boardCreator {
+  text-align: center;
+  font-weight: 500;
+  width: 110px;
+  border-left: 1px solid #fff;
+}
+
+div#board .boardList .boardArea .divideBoard .boardCreatedAt {
+  border-left: 1px solid #fff;
+  text-align: center;
+  width: 100px;
+}
+
+@media (max-width: 580px) {
+  div#board .boardList .boardArea .divideBoard .boardCreatedAt {
+    display: none;
+  }
+}
+
+div#board .boardList .boardArea .divideBoard:first-of-type .boardTitle {
+  cursor: unset;
+}
+
+div#board .boardList .selectPage {
+  padding: 10px 0;
+  border: 0px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div#board .boardList .selectPage span {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+div#board .boardList .selectPage span:hover {
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+div#board .boardList .writeNew {
+  font-family: "noto serif kr";
+  font-weight: 500;
+  border-top: 3px solid #fff;
+  text-align: right;
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 10px;
+}
+
+div#board .boardList .writeNew i:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+div#board table {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div#board span {
+  margin: 0 5px;
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+div#board h5.write {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+div#board div.boardWrite {
+  border: 0;
+}
+
+div#board div.boardWrite .writeHeader {
+  position: relative;
+}
+
+div#board div.boardWrite .writeHeader .title {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+div#board div.boardWrite .writeHeader .title i {
+  font-weight: 700;
+  font-family: "dm serif display";
+  font-style: italic;
+}
+
+div#board div.boardWrite .writeHeader .title input {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 40px;
+  width: calc(100% - 90px);
+  border: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+}
+
+div#board div.boardWrite .writeHeader .writer {
+  position: absolute;
+  line-height: 30px;
+  top: 100%;
+  right: 0;
+}
+
+div#board div.boardWrite .writeHeader .writer span {
+  cursor: unset;
+}
+
+div#board div.boardWrite .writeSection {
+  margin-top: 30px;
+}
+
+div#board div.boardWrite .writeSection textarea {
+  font-family: "noto serif kr";
+  font-weight: 300;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  height: 300px;
+  line-height: 20px;
+}
+
+div#board div.boardWrite .writeFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500;
+  color: #ccc;
+  line-height: 40px;
+}
+
+div#board div.boardWrite .writeFooter span:hover {
+  color: #fff;
+  font-weight: 700;
+}
+
+div#board div.boardWrite .writeFooter .goWrite span:last-of-type {
+  font-size: 18px;
+}
+
+div#board div.boardDetail {
+  border: 0px solid #000;
+}
+
+div#board div.boardDetail .boarderHeader {
+  height: 120px;
+  position: relative;
+}
+
+div#board div.boardDetail .boarderHeader .title {
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 60px;
+  height: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div#board div.boardDetail .boarderHeader .title i {
+  font-family: "dm serif display";
+  font-style: italic;
+}
+
+div#board div.boardDetail .boarderHeader .title span {
+  cursor: unset;
+}
+
+div#board div.boardDetail .boarderHeader .writer {
+  border: 1px solid #fff;
+  border-bottom: 0;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  font-family: "noto serif kr";
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  overflow: hidden;
+}
+
+div#board div.boardDetail .boarderHeader .writer span {
+  cursor: unset;
+}
+
+div#board div.boardDetail .boarderSection {
+  min-height: 180px;
+  max-height: 540px;
+  border: 1px solid #fff;
+  overflow: scroll;
+  padding: 0 10px;
+  cursor: text;
+}
+
+div#board div.boardDetail .boarderSection p:first-of-type {
+  text-indent: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+div#board div.boardDetail .boarderFooter {
+  border: 0px solid #000;
+  position: relative;
+}
+
+div#board div.boardDetail .boarderFooter .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div#board div.boardDetail .boarderFooter .date span {
+  cursor: unset;
+}
+
+div#board div.boardDetail .boarderFooter .btns {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ccc;
+  line-height: 40px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div#board div.boardDetail .boarderFooter .btns span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+div#board div.boardDetail .boarderFooter .btns span:hover {
+  color: #fff;
+}
+/*# sourceMappingURL=board.css.map */

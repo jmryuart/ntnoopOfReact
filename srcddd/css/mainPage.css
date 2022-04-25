@@ -1,0 +1,59 @@
+div.mainPage {
+  height: 100vh;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "noto sans kr";
+  color: #fff;
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+div.mainPage .border {
+  border: 1px solid #000;
+}
+
+div.mainPage .whiteBorder {
+  border-color: #000;
+}
+
+div.mainPage .darkBorder {
+  border-color: #fff;
+}
+
+div.mainPage .page {
+  margin: auto;
+  width: calc(100% - 80px);
+  padding-top: 40px;
+  max-width: 860px;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 100%;
+  overflow: scroll;
+}
+
+div.mainPage .firstCheck {
+  display: none;
+  position: fixed;
+  right: 18px;
+  top: 18px;
+}
+
+div.mainPage .firstCheck .h1area {
+  width: 84px;
+  height: 84px;
+  border: 2px solid #f00;
+  margin-left: auto;
+}
+
+div.mainPage .firstCheck p {
+  line-height: 30px;
+  color: #f90;
+}
+/*# sourceMappingURL=mainPage.css.map */

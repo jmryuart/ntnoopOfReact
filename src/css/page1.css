@@ -1,0 +1,126 @@
+div.page1 .aboutMe {
+  width: 100%;
+  padding-top: 60px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+div.page1 .aboutMe h2 {
+  color: #aa9090;
+}
+
+div.page1 .aboutMe h4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: -20px;
+  font-size: 56px;
+  line-height: 80px;
+  text-shadow: 2px 2px 2px rgba(255, 180, 160, 0.4);
+  background: -webkit-gradient(linear, left top, right top, from(#aff), to(#faa));
+  background: linear-gradient(to right, #aff, #faa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+div.page1 .aboutMe h5 {
+  margin-top: -20px;
+  color: #9090aa;
+  height: 60px;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+div.page1 .aboutMe h5 span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+div.page1 .texts {
+  margin-top: 60px;
+  font-family: "noto sans kr";
+  font-style: normal;
+  line-height: 30px;
+  overflow: hidden;
+}
+
+div.page1 .texts h3 {
+  font-family: "dm serif display";
+  font-style: italic;
+  line-height: 40px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+div.page1 .texts span {
+  font-family: "dm serif display";
+  font-style: italic;
+  padding: 0 5px;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#faa), to(#a8f));
+  background: linear-gradient(to right, #faa, #a8f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+div.page1 .texts h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  text-indent: 8px;
+}
+
+div.page1 .texts p {
+  margin-top: 15px;
+}
+
+div.page1 .texts #scrolling {
+  margin-top: 100px;
+  width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  left: 0;
+  -webkit-transition: linear all 5s;
+  transition: linear all 5s;
+}
+
+div.page1 .texts #scrolling h6 {
+  width: 800px;
+  height: 40px;
+  line-height: 38px;
+  background: -webkit-gradient(linear, left top, right top, from(#f55), to(#5f5));
+  background: linear-gradient(to right, #f55, #5f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+div.page1 .texts #scrolling h6 b {
+  padding: 0 20px;
+}
+
+div.page1 .texts #scrolling h6::before {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#faa), color-stop(#a8f), to(#faa));
+  background: linear-gradient(to right, #faa, #a8f, #faa);
+}
+
+div.page1 .texts #scrolling h6::after {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#a8f), color-stop(#faa), to(#a8f));
+  background: linear-gradient(to right, #a8f, #faa, #a8f);
+}
+/*# sourceMappingURL=page1.css.map */

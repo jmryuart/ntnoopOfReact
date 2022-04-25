@@ -1,0 +1,22 @@
+div.backGround {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
+}
+
+div.backGround .ball {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  -webkit-transition: all 11.5s;
+  transition: all 11.5s;
+  border-radius: 50px;
+  border: 2px solid #000;
+  border-color: #123456;
+}
+/*# sourceMappingURL=backGround.css.map */

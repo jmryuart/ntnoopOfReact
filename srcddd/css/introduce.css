@@ -1,0 +1,331 @@
+div.introduce {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+div.introduce::-webkit-scrollbar {
+  display: none;
+}
+
+div.introduce .personIntro {
+  text-align: center;
+}
+
+div.introduce .personIntro div {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+div.introduce .personIntro h1 {
+  font-size: 36px;
+  line-height: 60px;
+  letter-spacing: 60px;
+}
+
+div.introduce .personIntro h2 {
+  margin-top: 20px;
+  line-height: 40px;
+  text-align: right;
+}
+
+div.introduce .personIntro .personInfo {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+div.introduce .personIntro .personInfo .image {
+  width: 120px;
+  height: 150px;
+  background-image: url("http://test.ntnoop.com/dataserver/jinmo.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #fff;
+}
+
+div.introduce .personIntro .personInfo .image a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+}
+
+div.introduce .personIntro .personInfo .texts_mobile {
+  display: none;
+}
+
+div.introduce .personIntro .personInfo .texts {
+  text-align: left;
+}
+
+div.introduce .personIntro .personInfo .texts h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+div.introduce .personIntro .personInfo .texts h4 strong {
+  font-size: 18px;
+}
+
+div.introduce .personIntro .personInfo .texts h4 span {
+  font-weight: 500;
+  position: relative;
+  padding: 0 20px;
+}
+
+div.introduce .personIntro .personInfo .texts h4 span::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 8px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+div.introduce .personIntro .personInfo .texts h4 span:last-of-type::before {
+  display: none;
+}
+
+div.introduce .personIntro .personInfo .texts h5 {
+  margin-top: 10px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.introduce .personIntro .personInfo .texts h5 span {
+  display: block;
+  width: 100px;
+}
+
+div.introduce .personIntro .personInfo .texts h5 a {
+  color: #aaa;
+  padding: 0 10px;
+}
+
+div.introduce .personIntro .personInfo .texts h5 strong {
+  padding: 0 10px;
+}
+
+@media (max-width: 670px) {
+  div.introduce .personIntro h1 {
+    letter-spacing: 10px;
+  }
+  div.introduce .personIntro .personInfo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  div.introduce .personIntro .personInfo .image {
+    width: 100%;
+    height: calc((100vw - 60px) * 1.25);
+  }
+  div.introduce .personIntro .personInfo .texts {
+    display: none;
+  }
+  div.introduce .personIntro .personInfo .texts_mobile {
+    display: block;
+    text-align: left;
+  }
+  div.introduce .personIntro .personInfo .texts_mobile h4 {
+    line-height: 30px;
+  }
+  div.introduce .personIntro .personInfo .texts_mobile h5 {
+    line-height: 25px;
+  }
+}
+
+div.introduce .selfintro ul {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+div.introduce .selfintro ul li h4 {
+  font-size: 18px;
+}
+
+div.introduce .selfintro ul li p {
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "noto serif kr", serif;
+  margin-top: 10px;
+  text-indent: 7px;
+}
+
+div.introduce div {
+  border-top: 2px solid #fff;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+div.introduce div:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+div.introduce div div {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+div.introduce h3 {
+  font-size: 22px;
+  line-height: 40px;
+  padding-bottom: 20px;
+}
+
+div.introduce h4 {
+  line-height: 30px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+div.introduce h5 {
+  margin-top: 5px;
+  text-indent: 10px;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+div.introduce table {
+  width: 100%;
+  margin-top: 20px;
+  -webkit-box-shadow: 2px 2px 3px #ccc;
+          box-shadow: 2px 2px 3px #ccc;
+  font-weight: 500;
+  text-align: center;
+}
+
+div.introduce table tr th {
+  letter-spacing: 10px;
+  line-height: 40px;
+  width: 40px;
+  border: 1px solid #aaa;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+div.introduce table tr td {
+  line-height: 30px;
+  border: 1px solid #aaa;
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+div.introduce table tr:first-of-type {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #666;
+  text-align: center;
+}
+
+div.introduce table tr:first-of-type td {
+  line-height: 40px;
+}
+
+div.introduce div.academy_mb {
+  display: none;
+}
+
+div.introduce div.career table {
+  text-align: left;
+}
+
+div.introduce div.career table tbody tr td:first-of-type {
+  text-align: center;
+}
+
+div.introduce div.career table tbody tr td:nth-of-type(3) {
+  text-align: center;
+  width: 50px;
+}
+
+div.introduce div.career table tbody tr:first-of-type td {
+  text-align: center;
+}
+
+div.introduce div.career_mb {
+  display: none;
+}
+
+div.introduce div.ability table tr:nth-of-type(5) {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #666;
+  text-align: center;
+}
+
+div.introduce div.ability table tr:nth-of-type(5) td {
+  line-height: 40px;
+}
+
+div.introduce div.ability_mb {
+  display: none;
+}
+
+div.introduce div.military_mb {
+  display: none;
+}
+
+@media (max-width: 730px) {
+  div.introduce div.academy {
+    display: none;
+  }
+  div.introduce div.academy_mb {
+    display: block;
+  }
+  div.introduce div.career {
+    display: none;
+  }
+  div.introduce div.career_mb {
+    display: block;
+  }
+  div.introduce div.ability {
+    display: none;
+  }
+  div.introduce div.ability_mb {
+    display: block;
+  }
+  div.introduce div.military {
+    display: none;
+  }
+  div.introduce div.military_mb {
+    display: block;
+  }
+}
+/*# sourceMappingURL=introduce.css.map */

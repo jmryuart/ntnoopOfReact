@@ -1,0 +1,58 @@
+div.logPage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 500;
+  background-color: rgba(150, 150, 150, 0.5);
+}
+
+div.logPage form {
+  height: 240px;
+  max-width: 400px;
+  min-width: 240px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+div.logPage form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.logPage form button {
+  height: 40px;
+  cursor: pointer;
+  background-color: #666;
+}
+
+div.logPage form .btnCLose {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+/*# sourceMappingURL=log.css.map */
